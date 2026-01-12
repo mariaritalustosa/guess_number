@@ -15,3 +15,9 @@ random_number = random.randint(0, choice_number)
 
 
 while True:
+    answer_user = input("Adivinhe o número: ")
+    if answer_user.isdigit():
+        answer_user = int(answer_user)
+    else:
+        answer_user = input("Erro: o valor informado não é válido. Tente novamente!")
+        continue
