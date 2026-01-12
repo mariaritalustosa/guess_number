@@ -13,6 +13,7 @@ else:
 
 random_number = random.randint(0, choice_number)
 
+n_choices = 0
 
 while True:
     answer_user = input("Adivinhe o número: ")
@@ -22,6 +23,7 @@ while True:
         answer_user = input("Erro: o valor informado não é válido. Tente novamente!")
         continue
 
+    n_choices = n_choices + 1
     if answer_user == random_number:
         print("Parabéns! Você adivinhou o número.")
         break
@@ -29,3 +31,5 @@ while True:
         print("O número é menor. Tente novamente!")
     else:
         print("O número é maior. Tente novamente!")
+
+print("Quantidade de tentativas: " + str(n_choices))
