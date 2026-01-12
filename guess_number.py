@@ -21,3 +21,7 @@ while True:
     else:
         answer_user = input("Erro: o valor informado não é válido. Tente novamente!")
         continue
+
+    if answer_user == random_number:
+        print("Parabéns! Você adivinhou o número.")
+        break
