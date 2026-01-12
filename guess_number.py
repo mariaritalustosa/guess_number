@@ -25,3 +25,7 @@ while True:
     if answer_user == random_number:
         print("Parabéns! Você adivinhou o número.")
         break
+    elif answer_user > random_number:
+        print("O número é menor. Tente novamente!")
+    else:
+        print("O número é maior. Tente novamente!")
