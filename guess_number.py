@@ -9,3 +9,9 @@ if choice_number.isdigit():
 else:
     print("Por favor, digite um número válido.")
     quit()
+
+
+random_number = random.randint(0, choice_number)
+
+
+while True:
